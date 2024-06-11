@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #000000;
+  --duolingo: #58CC05;
+
+  --accent-primary: #1DB0F6;
+  --accent-secondary: #1999D6;
+  --foreground-primary: #000000;
   --foreground-secondary: #52656D;
   --primary: #FFFFFF;
   --secondary: #F7F7F7;
@@ -12,7 +16,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #FFFFFF;
+    --accent-primary: #49C0F8;
+    --accent-secondary: #1999D6;
+    --foreground-primary: #FFFFFF;
     --foreground-secondary: #AFAFAF;
     --primary: #131F24;
     --secondary: #202F36;
@@ -21,7 +27,7 @@
 }
 
 body {
-  color: var(--foreground);
+  color: var(--foreground-primary);
   background: var(--primary);
 }
 
@@ -29,4 +35,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.button-shadow {
+  margin-bottom: 5px;
+  margin-top: 0px;
+  box-shadow: 0 5px 0px 0 var(--accent-secondary);
+}
+
+.button-shadow:active {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  box-shadow: 0 0px 0px 0 var(--accent-secondary);
 }

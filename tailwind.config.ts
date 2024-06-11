@@ -9,7 +9,10 @@ const config: Config = {
   darkMode: 'media',
   theme: {
     colors: {
-      'foreground': 'var(--foreground)',
+      'duolingo': 'var(--duolingo)',
+      'accent-primary': 'var(--accent-primary)',
+      'accent-secondary': 'var(--accent-secondary)',
+      'foreground-primary': 'var(--foreground-primary)',
       'foreground-secondary': 'var(--foreground-secondary)',
       'primary': 'var(--primary)',
       'secondary': 'var(--secondary)',
